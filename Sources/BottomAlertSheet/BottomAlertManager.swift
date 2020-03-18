@@ -8,11 +8,11 @@
 
 import UIKit
 
-public protocol AlertService {
+public protocol BottomAlertService {
     func performBottomAlert<T>(title: String, message: T, topButtons: [UIButton], bottomButtonTitle: String)
 }
 
-public class AlertManager: NSObject, AlertService {
+public class BottomAlertManager: NSObject, AlertService {
 
     public func performBottomAlert<T>(title: String,
                                message: T,
